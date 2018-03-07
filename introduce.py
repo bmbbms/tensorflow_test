@@ -10,6 +10,7 @@ y_data = x_data * 0.1 + 0.3
 # (We know that W should be 0.1 and b 0.3, but TensorFlow will
 # figure that out for us.)
 W = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
+
 b = tf.Variable(tf.zeros([1]))
 y = W * x_data + b
 
